@@ -1,17 +1,47 @@
-import { Footer } from "@/components/Footer";
+import React from 'react';
+import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa';
 
-const Index = () => {
+const Footer = () => {
   return (
-    <div className="flex flex-col min-h-screen">
-      <main className="flex-grow">
-        <div className="text-center py-12">
-          <h1 className="text-3xl font-bold mb-4">Your Blank Canvas</h1>
-          <p className="text-lg">Chat with the agent to start making edits.</p>
+    <footer style={{
+      backgroundColor: '#f8f9fa',
+      padding: '20px 0',
+      marginTop: '40px',
+      borderTop: '1px solid #e7e7e7'
+    }}>
+      <div style={{
+        maxWidth: '1200px',
+        margin: '0 auto',
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center'
+      }}>
+        <p style={{ margin: 0 }}>© 2023 Your Company. All rights reserved.</p>
+        <div>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" style={{
+            color: '#333',
+            fontSize: '1.5rem',
+            marginRight: '15px'
+          }}>
+            <FaGithub />
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" style={{
+            color: '#1DA1F2',
+            fontSize: '1.5rem',
+            marginRight: '15px'
+          }}>
+            <FaTwitter />
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" style={{
+            color: '#0077B5',
+            fontSize: '1.5rem'
+          }}>
+            <FaLinkedin />
+          </a>
         </div>
-      </main>
-      <Footer />
-    </div>
+      </div>
+    </footer>
   );
 };
 
-export default Index;
+export default Footer;
