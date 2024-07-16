@@ -1,32 +1,17 @@
-import { Button } from "@/components/ui/button";
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
-import { useState } from "react";
+import { Footer } from "@/components/Footer";
 
-const HomePage = () => {
-  const [count, setCount] = useState(0);
-
+const Index = () => {
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold mb-8 text-center">Welcome to Our App</h1>
-      
-      <Card className="mb-8">
-        <CardHeader>
-          <CardTitle>About Us</CardTitle>
-          <CardDescription>Learn more about our company and mission</CardDescription>
-        </CardHeader>
-        <CardContent>
-          <p>We are a cutting-edge tech company focused on creating innovative solutions for our clients.</p>
-        </CardContent>
-      </Card>
-
-      <div className="text-center">
-        <p className="mb-4">You've clicked the button {count} times</p>
-        <Button onClick={() => setCount(count + 1)}>
-          Click me!
-        </Button>
-      </div>
+    <div className="flex flex-col min-h-screen">
+      <main className="flex-grow">
+        <div className="text-center py-12">
+          <h1 className="text-3xl font-bold mb-4">Your Blank Canvas</h1>
+          <p className="text-lg">Chat with the agent to start making edits.</p>
+        </div>
+      </main>
+      <Footer />
     </div>
   );
 };
 
-export default HomePage;
+export default Index;
