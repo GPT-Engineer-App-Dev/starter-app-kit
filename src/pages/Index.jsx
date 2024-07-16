@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
+import { FaRocket } from 'react-icons/fa';
 
 const Index = () => {
   return (
@@ -10,7 +11,7 @@ const Index = () => {
       </p>
       <div className="flex justify-center">
         <Button variant="default" size="lg">
-          Get Started
+          <FaRocket className="mr-2" /> Get Started
         </Button>
       </div>
     </div>
